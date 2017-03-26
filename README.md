@@ -22,7 +22,8 @@ The cloned code is now in the directory *jackb*.
 
 ### Updating an existing git repository
 
-From within the directory where you have cloned.
+After you have cloned, if there are updates to the repository, you can pull the updates from within the
+ directory where you have cloned.
 
 ```
 # git pull
