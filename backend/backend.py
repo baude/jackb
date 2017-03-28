@@ -23,7 +23,7 @@ def light_on():
 
 
 @app.route('/light/off')
-def light_on():
+def light_off():
     if LIGHT.is_active:
         LIGHT.off()
         return "turned light off"
