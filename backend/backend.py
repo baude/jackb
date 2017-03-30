@@ -41,6 +41,14 @@ def light_status():
 def light_blink():
     LIGHT.blink(on_time=1, off_time=1, n=5)
 
+@app.route('/light/blink/<number>')
+def light_blink(number)
+    LIGHT.blink(on_time=1, off_time=1, n= ('number'))
+
+        
+    
+    
+    
 
 if __name__ == '__main__':
    app.run()
