@@ -43,7 +43,7 @@ def light_blink():
 
 @app.route('/light/blink/<number>')
 def light_blink(number)
-    LIGHT.blink(on_time=1, off_time=1, n= ('number')
+    LIGHT.blink(on_time=1, off_time=1, n= ('number'))
 
         
     
