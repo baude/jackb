@@ -5,6 +5,13 @@ app = Flask(__name__)
 
 LIGHT = LED(17)
 
+def _blink(n):
+    for secs in range(n):
+        LIGHT.on() # onn
+        time.sleep(.25)
+        LIGHT.off() # off
+        time.sleep(.25)
+
 @app.route('/hello')
 def hello_flask():
     return 'Hello from flask\n'
@@ -39,7 +46,7 @@ def light_status():
 
 @app.route('/light/blink')
 def light_blink():
-    LIGHT.blink(on_time=1, off_time=1, n=5)
+    _blink(5)
 
 
 @app.route('/static/<path>')
